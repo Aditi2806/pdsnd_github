@@ -239,29 +239,25 @@ def user_stats(city, df):
 
     if city.lower() in ['new york city', 'chicago']:
         
-            
         # TO DO: Display counts of gender
-        
-        print('\nCalculating Gender Stats...\n')
-        
         unique_gender = df['Gender'].dropna().unique()
         gender_distribution = df['Gender'].value_counts()
         
+        print('\nCalculating Gender Stats...\n')
+
         for gender in unique_gender:
             print('Count of {}: {}'.format(gender, gender_distribution[gender]))
 
-        # TO DO: Display earliest, most recent, and most common year of birth
-        
-        print('\nCalculating Birth Year Stats...\n')
-        
+        # TO DO: Display earliest, most recent, and most common year of birth        
         earliest_yob = int(np.min(df['Birth Year']))
         recent_yob = int(np.max(df['Birth Year']))
         common_yob = int(df['Birth Year'].mode()[0])
+
+        print('\nCalculating Birth Year Stats...\n')
         
         print('Earliest Year of Birth is: {} \t Count: {}'.format(earliest_yob, df['Birth Year'].value_counts()[earliest_yob]))
         print('Most Recent Year of Birth is: {} \t Count: {}'.format(recent_yob, df['Birth Year'].value_counts()[recent_yob]))
         print('Most Common Year of Birth is: {} \t Count: {}'.format(common_yob, df['Birth Year'].value_counts()[common_yob]))
-
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*80)
