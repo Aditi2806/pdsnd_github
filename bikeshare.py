@@ -125,22 +125,27 @@ def load_data(city, month, day):
     
     df['Start Time'] = pd.to_datetime(df['Start Time'])
     df['End Time'] = pd.to_datetime(df['End Time'])
+
     df['Start Month'] = df['Start Time'].dt.month
     df['End Month'] = df['End Time'].dt.month
+
     df['Start Day'] = df['Start Time'].dt.weekday_name
     df['End Day'] = df['End Time'].dt.weekday_name
+
     df['Start Hour'] = df['Start Time'].dt.hour
     df['End Hour'] = df['End Time'].dt.hour
     
-    # Filter the dataframe based on the filters selected
-
+    # Map month filters to int using global dictionary month_mapping
     if month != '':
         for i in range(len(month)):
             month[i] = month_mapping[month[i].lower()]
+
+    # Map day filters to weekday name using global dictionary day_mapping
     if day != '':
         for i in range(len(day)):
             day[i] = day_mapping[day[i].lower()]
     
+    # Filter the dataframe based on the filters selected
     if 'all' not in month and month!='':
         df = df[df['Start Month'].isin(month)]
     
