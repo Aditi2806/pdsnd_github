@@ -3,11 +3,10 @@
 *Exploring the bikeshare data for different cities using Pandas, and Numpy in Python.*
 
 ---
-### Date created
-Include the date you created this project and README file.
+## Project Description
+ Bikeshare project provides us an overview of US bikeshare data and provides statistical analysis for 3 major cities in US: Chicago, New York City, and Washington. 
 
-### Description
-Describe what your project is about and what it does
+ Information regarding most popular station in each city, the busiest hour for bike sharing, and the distribution among different types of users is provided according to applied filters.
 
 ### Files used
 Include the files used
