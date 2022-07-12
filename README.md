@@ -16,5 +16,5 @@ The project uses 3 data files: chicago.csv, new_york_city.csv, and washington.cs
 * Pandas, Numpy, Calendar, and Time libraries
 * Data files to be present in the same directory as bikeshare project. 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+This project has been completed as part of Udacity's **Programming for Data Science using Python** nanodegree. I would like to thank the course mentors and the whole team to bring together a platform to learn and grow through practical implementations!
 
