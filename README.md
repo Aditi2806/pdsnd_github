@@ -9,7 +9,7 @@
  Information regarding most popular station in each city, the busiest hour for bike sharing, and the distribution among different types of users is provided according to applied filters.
 
 ### Files used
-Include the files used
+The project uses 3 data files: chicago.csv, new_york_city.csv, and washington.csv.
 
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
